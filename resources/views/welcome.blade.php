@@ -10,7 +10,7 @@
 				padding: 0;
 				width: 100%;
 				height: 100%;
-				color: #B0BEC5;
+				background-color: black;
 				display: table;
 				font-weight: 100;
 				font-family: 'Lato';
@@ -19,7 +19,8 @@
 			.container {
 				text-align: center;
 				display: table-cell;
-				vertical-align: middle;
+				vertical-align: top;
+
 			}
 
 			.content {
@@ -34,14 +35,24 @@
 
 			.quote {
 				font-size: 24px;
+				color: red;
+				margin-top: 25%;
 			}
+			.contact {
+                font-size: 24px;
+                color: red;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
 		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
+				<div class="title"><img src="{{ URL::asset('/img/logo.jpg') }}"></img></div>
 				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="contact"><img src="{{ URL::asset('/img/contact.jpg') }}"></img></div>
 			</div>
 		</div>
 	</body>
