@@ -50,7 +50,7 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title"><img src="{{ URL::asset('/img/logo.jpg') }}"></img></div>
+				<div class="title"><img src="{{ URL::asset('/img/Logo.jpg') }}"></img></div>
 				<div class="quote">{{ Inspiring::quote() }}</div>
 				<div class="contact"><img src="{{ URL::asset('/img/contact.jpg') }}"></img></div>
 			</div>
